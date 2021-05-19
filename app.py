@@ -16,7 +16,7 @@ with header:
 
 with dataset:
     st.header('NBA DataSet')
-    nba=pd.read_csv('D:\sairam\myds.csv')
+    nba=pd.read_csv(r'https://raw.githubusercontent.com/sairamsnv/stream/main/myds.csv')
     data=pd.DataFrame(nba['Team'].value_counts()).head(20)
     st.bar_chart(data)
 
